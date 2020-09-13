@@ -7563,6 +7563,11 @@ pretty-error@^2.0.2:
     renderkid "^2.0.1"
     utila "~0.4"
 
+primevue@^2.0.9:
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/primevue/-/primevue-2.0.9.tgz#6e968477ca812fd91e737e9d3b58b88634914abf"
+  integrity sha512-w4CjkSMr60GIopUjMOopRi2aBarvtN6ZnWyCAH9mCsYfjwle5oW5jKipZ2d1kQPgo9XZyJnUp5SEf+hUHGAvCQ==
+
 process-nextick-args@~2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
