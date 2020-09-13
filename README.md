@@ -1,35 +1,41 @@
-# conestoque
+# **Conestoque**
 
-## Project setup
+> Plataforma online de controle de estoque para supermercados.
 
-```
-yarn install
-```
+## Tecs
 
-### Compiles and hot-reloads for development
+- Frontend - SPA
+  - VueJS: Framework web reativo
+  - VueRouterJS: Roteador padrão para VueJS
+  - VuexJS: Gerenciador de estado centralizado padrão para VueJS
+  - PluginPWA: Abstração para configuração da PWA (Progressive Web App)
+- Backend - API
+  - Django: Framework
 
-```
-yarn serve
-```
+### Público alvo
 
-### Compiles and minifies for production
+- Pequenos supermercados
 
-```
-yarn build
-```
+### Problema a ser resolvido:
 
-### Run your end-to-end tests
+- Controle do que entra e sai a nível de mercadoria em pequenos supermercados
 
-```
-yarn test:e2e
-```
+### Funcionalidades básicas que o projeto deveria contemplar
 
-### Lints and fixes files
+- Login de usuário
+- Cadastro de usuário
+- Cadastro de produto
+- Editar produto
+- Reposição de estoque
+- Baixa no estoque
+- Estatísticas do estoque
 
-```
-yarn lint
-```
+### Links
 
-### Customize configuration
+[ConestoqueAPI](https://github.com/PaulloClara/conestoque-api)
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#### Membros
+
+- Paulo Ricardo - [PaulloClara](https://github.com/PaulloClara)
+- Josivan Cardoso - [JosivanCS](https://github.com/JosivanCS)
+- Isaias - []()
