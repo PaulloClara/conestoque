@@ -7,11 +7,12 @@ import "@/registerServiceWorker";
 
 import "primevue/resources/primevue.min.css";
 import "primevue/resources/themes/saga-blue/theme.css";
+import "@/assets/styles/main.scss";
 
 Vue.config.productionTip = false;
 
 new Vue({
   router,
   store,
-  render: (h) => h(App),
+  render: h => h(App)
 }).$mount("#app");

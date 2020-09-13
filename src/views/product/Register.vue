@@ -1,6 +1,6 @@
 <template>
-  <main id="home-page">
-    <h1>Home Page</h1>
+  <main id="product-register-page">
+    <h1>Product Register Page</h1>
   </main>
 </template>
 
@@ -10,7 +10,7 @@ import { Component, Vue } from "vue-property-decorator";
 @Component({
   components: {}
 })
-export default class HomePage extends Vue {}
+export default class ProductRegisterPage extends Vue {}
 </script>
 
 <style lang="scss"></style>
