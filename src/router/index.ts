@@ -1,8 +1,9 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
+import store from "@/store";
 
-import Home from "@/views/Home.vue";
-import DefaultPage from "@/layouts/Default.vue";
+import Login from "@/views/home/Login.vue";
+import DefaultLayout from "@/layouts/Default.vue";
 
 Vue.use(VueRouter);
 
@@ -10,17 +11,27 @@ const routes: Array<RouteConfig> = [
   {
     path: "/",
     name: "home",
-    component: DefaultPage,
+    component: DefaultLayout,
+    beforeEnter(to, from, next) {
+      if (store.getters.isActiveSession) {
+        router.replace({ name: "dashboard" });
+      } else {
+        next();
+      }
+    },
     children: [
       {
-        path: "/",
-        component: Home,
-        alias: ["/home"]
+        path: "/login",
+        alias: ["/"],
+        name: "login",
+        component: Login
       },
       {
-        path: "/",
-        component: Home,
-        alias: ["/home"]
+        path: "/register",
+        name: "register",
+        component() {
+          return import("@/views/home/Register.vue");
+        }
       }
     ]
   },

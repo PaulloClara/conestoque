@@ -1,6 +1,8 @@
 <template>
   <div id="default-layout">
-    <span>default layout</span>
+    <header>
+      <h1>Layout padrão</h1>
+    </header>
 
     <router-view></router-view>
   </div>
